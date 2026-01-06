@@ -1,5 +1,6 @@
 # Silicon Translator（Windows 桌面划词翻译器）
 
+
 本仓库提供一个基于 **Tauri（TypeScript/JavaScript 前端 + Rust 后端）** 的 Windows 桌面 AI 划词翻译器 MVP 骨架，满足：
 
 - 常驻托盘 + 悬浮按钮 + 悬浮翻译窗
