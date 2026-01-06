@@ -1,0 +1,2 @@
+# silicon_translater
+自己做的用硅基流动api的划词翻译
