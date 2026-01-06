@@ -1,0 +1,99 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", "PingFang SC", sans-serif;
+  background: transparent;
+}
+
+body {
+  margin: 0;
+  background: transparent;
+}
+
+#app {
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.brand {
+  font-weight: 600;
+}
+
+.lang-picker {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+select,
+input,
+textarea {
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  padding: 8px 10px;
+  font-size: 14px;
+  background: #fff;
+}
+
+textarea {
+  width: 100%;
+  min-height: 96px;
+  resize: vertical;
+}
+
+.block {
+  margin-bottom: 12px;
+}
+
+.block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+.controls input {
+  flex: 1;
+}
+
+button {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+}
+
+button.ghost {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.status {
+  margin-top: 8px;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.swap {
+  color: #6b7280;
+}

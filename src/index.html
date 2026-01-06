@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Silicon Translator</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="app-header">
+        <div class="brand">Silicon Translator</div>
+        <div class="lang-picker">
+          <select id="sourceLang">
+            <option value="自动">自动</option>
+            <option value="English">English</option>
+            <option value="中文">中文</option>
+          </select>
+          <span class="swap">⇄</span>
+          <select id="targetLang">
+            <option value="中文">中文</option>
+            <option value="English">English</option>
+          </select>
+        </div>
+      </header>
+
+      <main class="panel">
+        <section class="block">
+          <div class="block-header">
+            <span>原文</span>
+            <button id="copySource" class="ghost">复制</button>
+          </div>
+          <textarea id="sourceText" placeholder="在这里粘贴或等待划词输入..."></textarea>
+        </section>
+
+        <section class="block">
+          <div class="block-header">
+            <span>译文</span>
+            <div class="actions">
+              <button id="speakText" class="ghost">朗读</button>
+              <button id="copyTarget" class="ghost">复制</button>
+            </div>
+          </div>
+          <textarea id="targetText" readonly placeholder="译文将在此显示"></textarea>
+        </section>
+
+        <div class="controls">
+          <input id="model" placeholder="Model (例如 Qwen/Qwen2.5-7B-Instruct)" />
+          <button id="translate">翻译</button>
+        </div>
+        <p id="status" class="status">待翻译</p>
+      </main>
+    </div>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
